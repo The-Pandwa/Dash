@@ -5,6 +5,7 @@ import plotly.express as px
 
 # Créer l'application Dash avec Bootstrap
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Charger les données
 df = pd.read_csv('https://raw.githubusercontent.com/chriszapp/datasets/main/books.csv', on_bad_lines="skip")
